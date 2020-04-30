@@ -28,12 +28,21 @@ class App extends React.Component{
     render(){
         const { data, country } = this.state;
         return(
-            <div className = {styles.container}>
-                <img className={styles.image} src={coronaImage} alt='Corona Logo'/>
-                <Cards data={data} />
-                <CountryPicker handleCountryChange={this.handleCountryChange}/>
-                <Chart data={data} country={country}/>
+            <div>
+                <div className = {styles.firstContainer}>
+                    <img className={styles.image} src={coronaImage} alt='Corona Logo'/>
+                    <h3> Get the latest statistics about the pandemic </h3>
+                    <div>
+                        <h5 className = {styles.Readmore}> Scroll Down </h5>
+                    </div>
+                </div>
+                <div className = {styles.secondContainer}>
+                    <Cards data={data} />
+                    <CountryPicker handleCountryChange={this.handleCountryChange}/>
+                    <Chart data={data} country={country}/>
+                </div>
             </div>
+          
         )
     }
 }
