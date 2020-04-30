@@ -9,6 +9,7 @@ body{
     font-size:20px;
     color:#e6e6e6;
     line-height:2.0;
+    background-color:#e6e6e6;
 }
 
   
@@ -57,11 +58,11 @@ body{
     }
 
     .image{
-        width: 50p%;
+        width: 70%;
     }
 
     body{
-        font-size: 15px;
+        font-size: 13px;
         color:#e6e6e6;
         line-height:1.7;
     }
